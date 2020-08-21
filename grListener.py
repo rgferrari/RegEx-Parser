@@ -107,66 +107,12 @@ class grListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by grParser#char.
-    def enterChar(self, ctx:grParser.CharContext):
+    # Enter a parse tree produced by grParser#char_.
+    def enterChar_(self, ctx:grParser.Char_Context):
         pass
 
-    # Exit a parse tree produced by grParser#char.
-    def exitChar(self, ctx:grParser.CharContext):
-        pass
-
-
-    # Enter a parse tree produced by grParser#set_.
-    def enterSet_(self, ctx:grParser.Set_Context):
-        pass
-
-    # Exit a parse tree produced by grParser#set_.
-    def exitSet_(self, ctx:grParser.Set_Context):
-        pass
-
-
-    # Enter a parse tree produced by grParser#positive_set.
-    def enterPositive_set(self, ctx:grParser.Positive_setContext):
-        pass
-
-    # Exit a parse tree produced by grParser#positive_set.
-    def exitPositive_set(self, ctx:grParser.Positive_setContext):
-        pass
-
-
-    # Enter a parse tree produced by grParser#negative_set.
-    def enterNegative_set(self, ctx:grParser.Negative_setContext):
-        pass
-
-    # Exit a parse tree produced by grParser#negative_set.
-    def exitNegative_set(self, ctx:grParser.Negative_setContext):
-        pass
-
-
-    # Enter a parse tree produced by grParser#set_items.
-    def enterSet_items(self, ctx:grParser.Set_itemsContext):
-        pass
-
-    # Exit a parse tree produced by grParser#set_items.
-    def exitSet_items(self, ctx:grParser.Set_itemsContext):
-        pass
-
-
-    # Enter a parse tree produced by grParser#set_item.
-    def enterSet_item(self, ctx:grParser.Set_itemContext):
-        pass
-
-    # Exit a parse tree produced by grParser#set_item.
-    def exitSet_item(self, ctx:grParser.Set_itemContext):
-        pass
-
-
-    # Enter a parse tree produced by grParser#range_.
-    def enterRange_(self, ctx:grParser.Range_Context):
-        pass
-
-    # Exit a parse tree produced by grParser#range_.
-    def exitRange_(self, ctx:grParser.Range_Context):
+    # Exit a parse tree produced by grParser#char_.
+    def exitChar_(self, ctx:grParser.Char_Context):
         pass
 
 

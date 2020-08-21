@@ -11,41 +11,30 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\21")
-        buf.write("w\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3)")
+        buf.write("P\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
         buf.write("\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16\t")
-        buf.write("\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
-        buf.write("\4\24\t\24\4\25\t\25\3\2\3\2\5\2-\n\2\3\3\3\3\3\3\3\3")
-        buf.write("\3\4\3\4\5\4\65\n\4\3\5\3\5\3\5\3\6\3\6\3\6\5\6=\n\6\3")
-        buf.write("\7\3\7\3\7\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\t\5\tJ\n\t\3")
-        buf.write("\n\3\n\3\n\3\n\3\13\3\13\3\f\3\f\3\r\3\r\3\r\5\rW\n\r")
-        buf.write("\3\16\3\16\5\16[\n\16\3\17\3\17\3\17\3\17\3\20\3\20\3")
-        buf.write("\20\3\20\3\21\3\21\3\21\3\21\5\21i\n\21\3\22\3\22\5\22")
-        buf.write("m\n\22\3\23\3\23\3\23\3\23\3\24\3\24\3\25\3\25\3\25\2")
-        buf.write("\2\26\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(\2\3")
-        buf.write("\4\2\3\f\17\21\2n\2,\3\2\2\2\4.\3\2\2\2\6\64\3\2\2\2\b")
-        buf.write("\66\3\2\2\2\n<\3\2\2\2\f>\3\2\2\2\16A\3\2\2\2\20I\3\2")
-        buf.write("\2\2\22K\3\2\2\2\24O\3\2\2\2\26Q\3\2\2\2\30V\3\2\2\2\32")
-        buf.write("Z\3\2\2\2\34\\\3\2\2\2\36`\3\2\2\2 h\3\2\2\2\"l\3\2\2")
-        buf.write("\2$n\3\2\2\2&r\3\2\2\2(t\3\2\2\2*-\5\4\3\2+-\5\6\4\2,")
-        buf.write("*\3\2\2\2,+\3\2\2\2-\3\3\2\2\2./\5\6\4\2/\60\7\3\2\2\60")
-        buf.write("\61\5\2\2\2\61\5\3\2\2\2\62\65\5\b\5\2\63\65\5\n\6\2\64")
-        buf.write("\62\3\2\2\2\64\63\3\2\2\2\65\7\3\2\2\2\66\67\5\n\6\2\67")
-        buf.write("8\5\6\4\28\t\3\2\2\29=\5\f\7\2:=\5\16\b\2;=\5\20\t\2<")
-        buf.write("9\3\2\2\2<:\3\2\2\2<;\3\2\2\2=\13\3\2\2\2>?\5\20\t\2?")
-        buf.write("@\7\4\2\2@\r\3\2\2\2AB\5\20\t\2BC\7\5\2\2C\17\3\2\2\2")
-        buf.write("DJ\5\22\n\2EJ\5\24\13\2FJ\5\26\f\2GJ\5\30\r\2HJ\5\32\16")
-        buf.write("\2ID\3\2\2\2IE\3\2\2\2IF\3\2\2\2IG\3\2\2\2IH\3\2\2\2J")
-        buf.write("\21\3\2\2\2KL\7\6\2\2LM\5\2\2\2MN\7\7\2\2N\23\3\2\2\2")
-        buf.write("OP\7\b\2\2P\25\3\2\2\2QR\7\t\2\2R\27\3\2\2\2SW\5(\25\2")
-        buf.write("TU\7\n\2\2UW\5&\24\2VS\3\2\2\2VT\3\2\2\2W\31\3\2\2\2X")
-        buf.write("[\5\34\17\2Y[\5\36\20\2ZX\3\2\2\2ZY\3\2\2\2[\33\3\2\2")
-        buf.write("\2\\]\7\13\2\2]^\5 \21\2^_\7\f\2\2_\35\3\2\2\2`a\7\r\2")
-        buf.write("\2ab\5 \21\2bc\7\f\2\2c\37\3\2\2\2di\5\"\22\2ef\5\"\22")
-        buf.write("\2fg\5 \21\2gi\3\2\2\2hd\3\2\2\2he\3\2\2\2i!\3\2\2\2j")
-        buf.write("m\5$\23\2km\5\30\r\2lj\3\2\2\2lk\3\2\2\2m#\3\2\2\2no\5")
-        buf.write("\30\r\2op\7\16\2\2pq\5\30\r\2q%\3\2\2\2rs\t\2\2\2s\'\3")
-        buf.write("\2\2\2tu\n\2\2\2u)\3\2\2\2\n,\64<IVZhl")
+        buf.write("\16\4\17\t\17\3\2\3\2\5\2!\n\2\3\3\3\3\3\3\3\3\3\4\3\4")
+        buf.write("\5\4)\n\4\3\5\3\5\3\5\3\6\3\6\3\6\5\6\61\n\6\3\7\3\7\3")
+        buf.write("\7\3\b\3\b\3\b\3\t\3\t\3\t\3\t\5\t=\n\t\3\n\3\n\3\n\3")
+        buf.write("\n\3\13\3\13\3\f\3\f\3\r\3\r\3\r\5\rJ\n\r\3\16\3\16\3")
+        buf.write("\17\3\17\3\17\2\2\20\2\4\6\b\n\f\16\20\22\24\26\30\32")
+        buf.write("\34\2\4\3\2\3\17\3\2\20)\2I\2 \3\2\2\2\4\"\3\2\2\2\6(")
+        buf.write("\3\2\2\2\b*\3\2\2\2\n\60\3\2\2\2\f\62\3\2\2\2\16\65\3")
+        buf.write("\2\2\2\20<\3\2\2\2\22>\3\2\2\2\24B\3\2\2\2\26D\3\2\2\2")
+        buf.write("\30I\3\2\2\2\32K\3\2\2\2\34M\3\2\2\2\36!\5\4\3\2\37!\5")
+        buf.write("\6\4\2 \36\3\2\2\2 \37\3\2\2\2!\3\3\2\2\2\"#\5\6\4\2#")
+        buf.write("$\7\3\2\2$%\5\2\2\2%\5\3\2\2\2&)\5\b\5\2\')\5\n\6\2(&")
+        buf.write("\3\2\2\2(\'\3\2\2\2)\7\3\2\2\2*+\5\n\6\2+,\5\6\4\2,\t")
+        buf.write("\3\2\2\2-\61\5\f\7\2.\61\5\16\b\2/\61\5\20\t\2\60-\3\2")
+        buf.write("\2\2\60.\3\2\2\2\60/\3\2\2\2\61\13\3\2\2\2\62\63\5\20")
+        buf.write("\t\2\63\64\7\4\2\2\64\r\3\2\2\2\65\66\5\20\t\2\66\67\7")
+        buf.write("\5\2\2\67\17\3\2\2\28=\5\22\n\29=\5\24\13\2:=\5\26\f\2")
+        buf.write(";=\5\30\r\2<8\3\2\2\2<9\3\2\2\2<:\3\2\2\2<;\3\2\2\2=\21")
+        buf.write("\3\2\2\2>?\7\6\2\2?@\5\2\2\2@A\7\7\2\2A\23\3\2\2\2BC\7")
+        buf.write("\b\2\2C\25\3\2\2\2DE\7\t\2\2E\27\3\2\2\2FJ\5\34\17\2G")
+        buf.write("H\7\n\2\2HJ\5\32\16\2IF\3\2\2\2IG\3\2\2\2J\31\3\2\2\2")
+        buf.write("KL\t\2\2\2L\33\3\2\2\2MN\t\3\2\2N\35\3\2\2\2\7 (\60<I")
         return buf.getvalue()
 
 
@@ -60,8 +49,11 @@ class grParser ( Parser ):
     sharedContextCache = PredictionContextCache()
 
     literalNames = [ "<INVALID>", "'|'", "'*'", "'+'", "'('", "')'", "'.'", 
-                     "'$'", "'\\'", "'['", "']'", "'[^'", "'-'", "'^'", 
-                     "'{'", "'}'" ]
+                     "'$'", "'\\'", "'['", "']'", "'^'", "'{'", "'}'", "'a'", 
+                     "'b'", "'c'", "'d'", "'e'", "'f'", "'g'", "'h'", "'i'", 
+                     "'j'", "'k'", "'l'", "'m'", "'n'", "'o'", "'p'", "'q'", 
+                     "'r'", "'s'", "'t'", "'u'", "'v'", "'w'", "'x'", "'y'", 
+                     "'z'" ]
 
     symbolicNames = [  ]
 
@@ -76,20 +68,13 @@ class grParser ( Parser ):
     RULE_group = 8
     RULE_any_ = 9
     RULE_eos = 10
-    RULE_char = 11
-    RULE_set_ = 12
-    RULE_positive_set = 13
-    RULE_negative_set = 14
-    RULE_set_items = 15
-    RULE_set_item = 16
-    RULE_range_ = 17
-    RULE_metachar = 18
-    RULE_non_metachar = 19
+    RULE_char_ = 11
+    RULE_metachar = 12
+    RULE_non_metachar = 13
 
     ruleNames =  [ "re", "union", "simple_re", "concat", "basic_re", "star", 
-                   "plus", "elementary_re", "group", "any_", "eos", "char", 
-                   "set_", "positive_set", "negative_set", "set_items", 
-                   "set_item", "range_", "metachar", "non_metachar" ]
+                   "plus", "elementary_re", "group", "any_", "eos", "char_", 
+                   "metachar", "non_metachar" ]
 
     EOF = Token.EOF
     T__0=1
@@ -107,6 +92,30 @@ class grParser ( Parser ):
     T__12=13
     T__13=14
     T__14=15
+    T__15=16
+    T__16=17
+    T__17=18
+    T__18=19
+    T__19=20
+    T__20=21
+    T__21=22
+    T__22=23
+    T__23=24
+    T__24=25
+    T__25=26
+    T__26=27
+    T__27=28
+    T__28=29
+    T__29=30
+    T__30=31
+    T__31=32
+    T__32=33
+    T__33=34
+    T__34=35
+    T__35=36
+    T__36=37
+    T__37=38
+    T__38=39
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -150,18 +159,18 @@ class grParser ( Parser ):
         localctx = grParser.ReContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_re)
         try:
-            self.state = 42
+            self.state = 30
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 40
+                self.state = 28
                 self.union()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 41
+                self.state = 29
                 self.simple_re()
                 pass
 
@@ -209,11 +218,11 @@ class grParser ( Parser ):
         self.enterRule(localctx, 2, self.RULE_union)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 44
+            self.state = 32
             self.simple_re()
-            self.state = 45
+            self.state = 33
             self.match(grParser.T__0)
-            self.state = 46
+            self.state = 34
             self.re()
         except RecognitionException as re:
             localctx.exception = re
@@ -257,18 +266,18 @@ class grParser ( Parser ):
         localctx = grParser.Simple_reContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_simple_re)
         try:
-            self.state = 50
+            self.state = 38
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 48
+                self.state = 36
                 self.concat()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 49
+                self.state = 37
                 self.basic_re()
                 pass
 
@@ -316,9 +325,9 @@ class grParser ( Parser ):
         self.enterRule(localctx, 6, self.RULE_concat)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 52
+            self.state = 40
             self.basic_re()
-            self.state = 53
+            self.state = 41
             self.simple_re()
         except RecognitionException as re:
             localctx.exception = re
@@ -366,24 +375,24 @@ class grParser ( Parser ):
         localctx = grParser.Basic_reContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_basic_re)
         try:
-            self.state = 58
+            self.state = 46
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 55
+                self.state = 43
                 self.star()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 56
+                self.state = 44
                 self.plus()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 57
+                self.state = 45
                 self.elementary_re()
                 pass
 
@@ -427,9 +436,9 @@ class grParser ( Parser ):
         self.enterRule(localctx, 10, self.RULE_star)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 60
+            self.state = 48
             self.elementary_re()
-            self.state = 61
+            self.state = 49
             self.match(grParser.T__1)
         except RecognitionException as re:
             localctx.exception = re
@@ -470,9 +479,9 @@ class grParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_plus)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 63
+            self.state = 51
             self.elementary_re()
-            self.state = 64
+            self.state = 52
             self.match(grParser.T__2)
         except RecognitionException as re:
             localctx.exception = re
@@ -501,12 +510,8 @@ class grParser ( Parser ):
             return self.getTypedRuleContext(grParser.EosContext,0)
 
 
-        def char(self):
-            return self.getTypedRuleContext(grParser.CharContext,0)
-
-
-        def set_(self):
-            return self.getTypedRuleContext(grParser.Set_Context,0)
+        def char_(self):
+            return self.getTypedRuleContext(grParser.Char_Context,0)
 
 
         def getRuleIndex(self):
@@ -528,39 +533,31 @@ class grParser ( Parser ):
         localctx = grParser.Elementary_reContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_elementary_re)
         try:
-            self.state = 71
+            self.state = 58
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
-            if la_ == 1:
+            token = self._input.LA(1)
+            if token in [grParser.T__3]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 66
+                self.state = 54
                 self.group()
                 pass
-
-            elif la_ == 2:
+            elif token in [grParser.T__5]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 67
+                self.state = 55
                 self.any_()
                 pass
-
-            elif la_ == 3:
+            elif token in [grParser.T__6]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 68
+                self.state = 56
                 self.eos()
                 pass
-
-            elif la_ == 4:
+            elif token in [grParser.T__7, grParser.T__13, grParser.T__14, grParser.T__15, grParser.T__16, grParser.T__17, grParser.T__18, grParser.T__19, grParser.T__20, grParser.T__21, grParser.T__22, grParser.T__23, grParser.T__24, grParser.T__25, grParser.T__26, grParser.T__27, grParser.T__28, grParser.T__29, grParser.T__30, grParser.T__31, grParser.T__32, grParser.T__33, grParser.T__34, grParser.T__35, grParser.T__36, grParser.T__37, grParser.T__38]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 69
-                self.char()
+                self.state = 57
+                self.char_()
                 pass
-
-            elif la_ == 5:
-                self.enterOuterAlt(localctx, 5)
-                self.state = 70
-                self.set_()
-                pass
-
+            else:
+                raise NoViableAltException(self)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -601,11 +598,11 @@ class grParser ( Parser ):
         self.enterRule(localctx, 16, self.RULE_group)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 73
+            self.state = 60
             self.match(grParser.T__3)
-            self.state = 74
+            self.state = 61
             self.re()
-            self.state = 75
+            self.state = 62
             self.match(grParser.T__4)
         except RecognitionException as re:
             localctx.exception = re
@@ -643,7 +640,7 @@ class grParser ( Parser ):
         self.enterRule(localctx, 18, self.RULE_any_)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 77
+            self.state = 64
             self.match(grParser.T__5)
         except RecognitionException as re:
             localctx.exception = re
@@ -681,7 +678,7 @@ class grParser ( Parser ):
         self.enterRule(localctx, 20, self.RULE_eos)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 79
+            self.state = 66
             self.match(grParser.T__6)
         except RecognitionException as re:
             localctx.exception = re
@@ -692,7 +689,7 @@ class grParser ( Parser ):
         return localctx
 
 
-    class CharContext(ParserRuleContext):
+    class Char_Context(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -707,356 +704,42 @@ class grParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return grParser.RULE_char
+            return grParser.RULE_char_
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterChar" ):
-                listener.enterChar(self)
+            if hasattr( listener, "enterChar_" ):
+                listener.enterChar_(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitChar" ):
-                listener.exitChar(self)
+            if hasattr( listener, "exitChar_" ):
+                listener.exitChar_(self)
 
 
 
 
-    def char(self):
+    def char_(self):
 
-        localctx = grParser.CharContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_char)
+        localctx = grParser.Char_Context(self, self._ctx, self.state)
+        self.enterRule(localctx, 22, self.RULE_char_)
         try:
-            self.state = 84
+            self.state = 71
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [grParser.T__10, grParser.T__11]:
+            if token in [grParser.T__13, grParser.T__14, grParser.T__15, grParser.T__16, grParser.T__17, grParser.T__18, grParser.T__19, grParser.T__20, grParser.T__21, grParser.T__22, grParser.T__23, grParser.T__24, grParser.T__25, grParser.T__26, grParser.T__27, grParser.T__28, grParser.T__29, grParser.T__30, grParser.T__31, grParser.T__32, grParser.T__33, grParser.T__34, grParser.T__35, grParser.T__36, grParser.T__37, grParser.T__38]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 81
+                self.state = 68
                 self.non_metachar()
                 pass
             elif token in [grParser.T__7]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 82
+                self.state = 69
                 self.match(grParser.T__7)
-                self.state = 83
+                self.state = 70
                 self.metachar()
                 pass
             else:
                 raise NoViableAltException(self)
 
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Set_Context(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def positive_set(self):
-            return self.getTypedRuleContext(grParser.Positive_setContext,0)
-
-
-        def negative_set(self):
-            return self.getTypedRuleContext(grParser.Negative_setContext,0)
-
-
-        def getRuleIndex(self):
-            return grParser.RULE_set_
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterSet_" ):
-                listener.enterSet_(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitSet_" ):
-                listener.exitSet_(self)
-
-
-
-
-    def set_(self):
-
-        localctx = grParser.Set_Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_set_)
-        try:
-            self.state = 88
-            self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [grParser.T__8]:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 86
-                self.positive_set()
-                pass
-            elif token in [grParser.T__10]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 87
-                self.negative_set()
-                pass
-            else:
-                raise NoViableAltException(self)
-
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Positive_setContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def set_items(self):
-            return self.getTypedRuleContext(grParser.Set_itemsContext,0)
-
-
-        def getRuleIndex(self):
-            return grParser.RULE_positive_set
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPositive_set" ):
-                listener.enterPositive_set(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPositive_set" ):
-                listener.exitPositive_set(self)
-
-
-
-
-    def positive_set(self):
-
-        localctx = grParser.Positive_setContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_positive_set)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 90
-            self.match(grParser.T__8)
-            self.state = 91
-            self.set_items()
-            self.state = 92
-            self.match(grParser.T__9)
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Negative_setContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def set_items(self):
-            return self.getTypedRuleContext(grParser.Set_itemsContext,0)
-
-
-        def getRuleIndex(self):
-            return grParser.RULE_negative_set
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterNegative_set" ):
-                listener.enterNegative_set(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitNegative_set" ):
-                listener.exitNegative_set(self)
-
-
-
-
-    def negative_set(self):
-
-        localctx = grParser.Negative_setContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 28, self.RULE_negative_set)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 94
-            self.match(grParser.T__10)
-            self.state = 95
-            self.set_items()
-            self.state = 96
-            self.match(grParser.T__9)
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Set_itemsContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def set_item(self):
-            return self.getTypedRuleContext(grParser.Set_itemContext,0)
-
-
-        def set_items(self):
-            return self.getTypedRuleContext(grParser.Set_itemsContext,0)
-
-
-        def getRuleIndex(self):
-            return grParser.RULE_set_items
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterSet_items" ):
-                listener.enterSet_items(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitSet_items" ):
-                listener.exitSet_items(self)
-
-
-
-
-    def set_items(self):
-
-        localctx = grParser.Set_itemsContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 30, self.RULE_set_items)
-        try:
-            self.state = 102
-            self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
-            if la_ == 1:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 98
-                self.set_item()
-                pass
-
-            elif la_ == 2:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 99
-                self.set_item()
-                self.state = 100
-                self.set_items()
-                pass
-
-
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Set_itemContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def range_(self):
-            return self.getTypedRuleContext(grParser.Range_Context,0)
-
-
-        def char(self):
-            return self.getTypedRuleContext(grParser.CharContext,0)
-
-
-        def getRuleIndex(self):
-            return grParser.RULE_set_item
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterSet_item" ):
-                listener.enterSet_item(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitSet_item" ):
-                listener.exitSet_item(self)
-
-
-
-
-    def set_item(self):
-
-        localctx = grParser.Set_itemContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 32, self.RULE_set_item)
-        try:
-            self.state = 106
-            self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
-            if la_ == 1:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 104
-                self.range_()
-                pass
-
-            elif la_ == 2:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 105
-                self.char()
-                pass
-
-
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Range_Context(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def char(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(grParser.CharContext)
-            else:
-                return self.getTypedRuleContext(grParser.CharContext,i)
-
-
-        def getRuleIndex(self):
-            return grParser.RULE_range_
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRange_" ):
-                listener.enterRange_(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRange_" ):
-                listener.exitRange_(self)
-
-
-
-
-    def range_(self):
-
-        localctx = grParser.Range_Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 34, self.RULE_range_)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 108
-            self.char()
-            self.state = 109
-            self.match(grParser.T__11)
-            self.state = 110
-            self.char()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1090,13 +773,13 @@ class grParser ( Parser ):
     def metachar(self):
 
         localctx = grParser.MetacharContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 36, self.RULE_metachar)
+        self.enterRule(localctx, 24, self.RULE_metachar)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 112
+            self.state = 73
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << grParser.T__0) | (1 << grParser.T__1) | (1 << grParser.T__2) | (1 << grParser.T__3) | (1 << grParser.T__4) | (1 << grParser.T__5) | (1 << grParser.T__6) | (1 << grParser.T__7) | (1 << grParser.T__8) | (1 << grParser.T__9) | (1 << grParser.T__12) | (1 << grParser.T__13) | (1 << grParser.T__14))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << grParser.T__0) | (1 << grParser.T__1) | (1 << grParser.T__2) | (1 << grParser.T__3) | (1 << grParser.T__4) | (1 << grParser.T__5) | (1 << grParser.T__6) | (1 << grParser.T__7) | (1 << grParser.T__8) | (1 << grParser.T__9) | (1 << grParser.T__10) | (1 << grParser.T__11) | (1 << grParser.T__12))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1134,13 +817,13 @@ class grParser ( Parser ):
     def non_metachar(self):
 
         localctx = grParser.Non_metacharContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_non_metachar)
+        self.enterRule(localctx, 26, self.RULE_non_metachar)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 114
+            self.state = 75
             _la = self._input.LA(1)
-            if _la <= 0 or (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << grParser.T__0) | (1 << grParser.T__1) | (1 << grParser.T__2) | (1 << grParser.T__3) | (1 << grParser.T__4) | (1 << grParser.T__5) | (1 << grParser.T__6) | (1 << grParser.T__7) | (1 << grParser.T__8) | (1 << grParser.T__9) | (1 << grParser.T__12) | (1 << grParser.T__13) | (1 << grParser.T__14))) != 0):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << grParser.T__13) | (1 << grParser.T__14) | (1 << grParser.T__15) | (1 << grParser.T__16) | (1 << grParser.T__17) | (1 << grParser.T__18) | (1 << grParser.T__19) | (1 << grParser.T__20) | (1 << grParser.T__21) | (1 << grParser.T__22) | (1 << grParser.T__23) | (1 << grParser.T__24) | (1 << grParser.T__25) | (1 << grParser.T__26) | (1 << grParser.T__27) | (1 << grParser.T__28) | (1 << grParser.T__29) | (1 << grParser.T__30) | (1 << grParser.T__31) | (1 << grParser.T__32) | (1 << grParser.T__33) | (1 << grParser.T__34) | (1 << grParser.T__35) | (1 << grParser.T__36) | (1 << grParser.T__37) | (1 << grParser.T__38))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
