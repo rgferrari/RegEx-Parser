@@ -4,18 +4,14 @@ from grListener import grListener
 from grParser import grParser
 import sys
 
-class GrPrintListener(grListener):
-    def enterRegEx(self, ctx):
-        print("RegEx: %s" % ctx.re())
-
 def main():
-    lexer = grLexer(StdinStream())
+    lexer = grLexer(InputStream(input('Poe a ER caralho: ')))
+    #lexer = grLexer(InputStream('a*b*'))
     stream = CommonTokenStream(lexer)
     parser = grParser(stream)
     tree = parser.re()
-    printer = GrPrintListener()
-    walker = ParseTreeWalker()
-    walker.walk(printer, tree)
+    printer = tree.toStringTree(recog=parser)
+    print(printer)
 
 if __name__ == '__main__':
     main()
