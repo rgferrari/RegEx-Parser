@@ -5,8 +5,10 @@ from grParser import grParser
 import sys
 
 def main():
-    lexer = grLexer(InputStream(input('Poe a ER caralho: ')))
-    #lexer = grLexer(InputStream('a*b*'))
+    regex = input('Insira a ER: ')
+    #regex = 'a*(b|a)'
+    lexer = grLexer(InputStream(regex))
+    #lexer = grLexer(InputStream('a')
     stream = CommonTokenStream(lexer)
     parser = grParser(stream)
     tree = parser.re()
@@ -16,3 +18,4 @@ def main():
 if __name__ == '__main__':
     main()
 
+    #a(a+b)*b

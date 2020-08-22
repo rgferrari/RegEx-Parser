@@ -71,15 +71,6 @@ class grListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by grParser#elementary_re.
-    def enterElementary_re(self, ctx:grParser.Elementary_reContext):
-        pass
-
-    # Exit a parse tree produced by grParser#elementary_re.
-    def exitElementary_re(self, ctx:grParser.Elementary_reContext):
-        pass
-
-
     # Enter a parse tree produced by grParser#group.
     def enterGroup(self, ctx:grParser.GroupContext):
         pass
@@ -113,24 +104,6 @@ class grListener(ParseTreeListener):
 
     # Exit a parse tree produced by grParser#char_.
     def exitChar_(self, ctx:grParser.Char_Context):
-        pass
-
-
-    # Enter a parse tree produced by grParser#metachar.
-    def enterMetachar(self, ctx:grParser.MetacharContext):
-        pass
-
-    # Exit a parse tree produced by grParser#metachar.
-    def exitMetachar(self, ctx:grParser.MetacharContext):
-        pass
-
-
-    # Enter a parse tree produced by grParser#non_metachar.
-    def enterNon_metachar(self, ctx:grParser.Non_metacharContext):
-        pass
-
-    # Exit a parse tree produced by grParser#non_metachar.
-    def exitNon_metachar(self, ctx:grParser.Non_metacharContext):
         pass
 
 
