@@ -27,9 +27,7 @@ class MyErrorListener(ErrorListener):
 
 def main():
     regex = input('Insira a ER: ')
-    #regex = 'a*(b|a)'
     lexer = grLexer(InputStream(regex))
-    #lexer = grLexer(InputStream('a')
     stream = CommonTokenStream(lexer)
     parser = grParser(stream)
     parser._listeners = [MyErrorListener()]

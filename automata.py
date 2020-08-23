@@ -1,5 +1,3 @@
-
-
 class state():
     _count = 0
 
