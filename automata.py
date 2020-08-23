@@ -1,7 +1,11 @@
 
 
 class state():
+    _count = 0
+
     def __init__(self, isEnd):
+        self.name = 'Q'+str(state._count)
+        state._count += 1
         self.isEnd = isEnd
         self.transitions = {}
         self.nullTransitions = []
@@ -100,3 +104,33 @@ def toNFA(postfixExp):
             stack.append(fromToken(token))
 
     return stack.pop()
+
+
+def addNextState(initialState, nextStates, visited, recursive): #Abstrai as transições vazias
+    if (len(initialState.nullTransitions)):
+        nextStates.append(initialState)
+        for st in initialState.nullTransitions:
+            if not st in visited:
+                visited.append(st)
+                addNextState(st, nextStates, visited, recursive+1)
+        if not recursive:
+            print("{} - {} -> [{}]".format(initialState.name, 'ε', ', '.join([vs.name for vs in nextStates])))
+    else:
+        nextStates.append(initialState)
+
+
+def match(nfa, word):
+    currentStates = []
+    addNextState(nfa[0], currentStates, [], 0)
+
+    for token in word:
+        nextStates = []
+
+        for currentState in currentStates:
+            nextState = currentState.transitions[token] if token in currentState.transitions else None
+            if (nextState):
+                print("{} - {} -> {}".format(currentState.name, token, nextState.name))
+                addNextState(nextState, nextStates, [], 0)
+        currentStates = nextStates
+
+    return True if any([x.isEnd for x in currentStates]) else False

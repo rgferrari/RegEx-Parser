@@ -61,25 +61,3 @@ def concatCharAdd(regex):
     
     return regexWConcat
 
-deivis = regexToPostfix('a||b')
-
-mariano = toNFA(deivis)
-
-print(mariano)
-
-# class grValidator():
-
-#a*b*
-#a*?b*
-
-
-#a(a|b)*b
-#a?(a|b)*?b
-
-#a((a|b)|a)b*
-#a?((a|b)|a)?b*
-
-
-
-# ignorar (), * +, ?(concat character), |
-
