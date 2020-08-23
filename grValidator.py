@@ -1,5 +1,6 @@
-import sys
 from enum import Enum
+from automata import toNFA
+
 
 precedence = {
     '|': 0,
@@ -7,6 +8,7 @@ precedence = {
     '*': 2,
     '+': 2
 } 
+
 
 def regexToPostfix(regex):
     postfix = []
@@ -59,7 +61,13 @@ def concatCharAdd(regex):
     
     return regexWConcat
 
+deivis = regexToPostfix('a||b')
 
+mariano = toNFA(deivis)
+
+print(mariano)
+
+# class grValidator():
 
 #a*b*
 #a*?b*
@@ -75,4 +83,3 @@ def concatCharAdd(regex):
 
 # ignorar (), * +, ?(concat character), |
 
-# class grValidator():

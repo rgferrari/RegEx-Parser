@@ -2,7 +2,6 @@ from antlr4 import *
 from grLexer import grLexer
 from grListener import grListener
 from grParser import grParser
-import sys
 
 def main():
     regex = input('Insira a ER: ')
