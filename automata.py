@@ -39,8 +39,11 @@ def unionExpression(firstExp, secondExp):
 
     addNullTransition(start, firstExp[0])
     addNullTransition(start, secondExp[0])
-    addNullTransition(end, firstExp[1])
-    addNullTransition(end, secondExp[1])
+    addNullTransition(firstExp[1], end)
+    addNullTransition(secondExp[1], end)
+
+    firstExp[1].isEnd = False
+    secondExp[1].isEnd = False
 
     return [start, end]
 
@@ -66,7 +69,7 @@ def closurePlusExpression(nfa):
     addNullTransition(start, nfa[0])
     addNullTransition(nfa[1], nfa[0])
     addNullTransition(nfa[1], end)
-    isEnd = False
+    nfa[1].isEnd = False
 
     return [start, end]
 
@@ -88,7 +91,7 @@ def toNFA(postfixExp):
     for token in postfixExp:
         if (token == '*'):
             stack.append(closureKleeneExpression(stack.pop()))
-        elif (token == "+"):
+        elif (token == '+'):
             stack.append(closurePlusExpression(stack.pop()))
         elif (token == '|'):
             right = stack.pop()
