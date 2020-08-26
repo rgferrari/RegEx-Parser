@@ -1,7 +1,3 @@
-from enum import Enum
-from automata import toNFA
-
-
 precedence = {
     '|': 0,
     '?': 1,
@@ -13,7 +9,6 @@ precedence = {
 def regexToPostfix(regex):
     postfix = []
     stack = []
-    whileOn = True
 
     regex = concatCharAdd(regex)
 

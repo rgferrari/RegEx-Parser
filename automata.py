@@ -97,10 +97,12 @@ def toNFA(postfixExp):
             right = stack.pop()
             left = stack.pop()
             stack.append(unionExpression(left, right))
-        elif (token == '?') :
+        elif (token == '?'):
             right = stack.pop()
             left = stack.pop()
             stack.append(concatExpression(left, right))
+        elif (token == 'E'):
+            stack.append(fromNull())
         else:
             stack.append(fromToken(token))
 
